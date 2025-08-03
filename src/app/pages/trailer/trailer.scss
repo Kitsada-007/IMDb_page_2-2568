@@ -1,0 +1,25 @@
+@use '@angular/material' as mat;
+
+.dense-1 {
+    @include mat.all-component-densities(-1);
+}
+
+.dense-2 {
+    @include mat.all-component-densities(-2);
+}
+
+.dense-3 {
+    @include mat.all-component-densities(-3);
+}
+
+
+.bg{
+  background-color: #1a1a1a;
+}
+.bg2{
+    background-color: #FFFFFF14;
+}
+
+.bg2:hover{
+  background-color: #FFFFFF10;
+}

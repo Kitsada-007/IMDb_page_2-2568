@@ -1,0 +1,98 @@
+<div class="mt-30 ml-50 mr-50 ">
+
+    <div class="flex items-center gap-2">
+        <div class="w-1 h-5 bg-yellow-500 rounded"></div>
+        <span class="text-white font-semibold">Top 10 on IMDb this week</span>
+    </div>
+    <button
+        class="absolute left-45 top-1/2 -translate-y-1/2 bg-transparent border border-white rounded-sm p-3 z-10 hover:bg-white/10 transition"
+        (click)="scrollLeft()">
+        <div class="text-white text-3xl hover:text-yellow-500">
+            <mat-icon fontIcon="arrow_back_ios"></mat-icon>
+        </div>
+    </button>
+    <div class="relative">
+        <div #scrollContainer class="overflow-x-auto snap-x snap-mandatory scroll-smooth flex gap-2 px-4 no-scrollbar ">
+            <div *ngFor="let lm of loadData" class="w-40 shrink-0 snap-start">
+                <mat-card class="h-full  bg text-white text-center">
+                    <div class="">
+                        <img [src]="lm.poster" alt="{{lm.title}} poster" class="w-full h-auto rounded shadow" />
+                    </div>
+                    <div class="m-1">
+                        <span class="flex flex-row gap-1 mt-2 m-1">
+                            <span class="text-yellow-400">
+                                <mat-icon fontIcon="star"></mat-icon>
+                            </span>
+                            <span class="text-white">8.0</span>
+                            <button
+                                class="flex items-center space-x-2 text-blue-400 font-bold text-sm hover:text-blue-300">
+                                <span class="text-sm"> <mat-icon fontIcon="star_border"></mat-icon></span>
+                            </button>
+                        </span>
+
+                        <div class="text-sm m-1">
+                            <div class="text-sm text-white truncate max-w-full flex">
+                                {{ lm.Id + ". " + lm.title }}
+                            </div>
+                        </div>
+                        <div class="grid grid-rows-2 m-1">
+                            <div class="text-base m-1">
+                                <button matButton>
+                                    <mat-icon fontIcon="add"></mat-icon>
+                                    <a [routerLink]="['/watchlist']">Watchlist</a><br>
+                                </button>
+                            </div>
+                            <div class="m-1">
+                                <button matButton="" class="custom-button text-base">
+                                    <span class="text-white">
+                                        <a [routerLink]="['/trailer']" [queryParams]="{ id: lm.Id }">Trailer</a>
+                                    </span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </mat-card>
+            </div>
+        </div>
+
+        <!-- ปุ่ม ขวา -->
+
+
+    </div>
+    <button
+        class="absolute right-45 top-1/2 -translate-y-1/2 bg-transparent border border-white rounded-sm p-3 z-10 hover:bg-white/10 transition"
+        (click)="scrollRight()">
+        <div class="text-white text-3xl hover:text-yellow-500">
+            <mat-icon fontIcon="arrow_forward_ios"></mat-icon>
+        </div>
+
+    </button>
+
+
+    <div class="mt-10">
+        <div class="flex items-center gap-2">
+            <div class="w-1 h-5 bg-yellow-500 rounded"></div>
+            <span class="text-white font-semibold">Born today </span>
+            <span class="text-white mt-1">
+                <mat-icon fontIcon="chevron_right"></mat-icon>
+            </span>
+
+        </div>
+        <div class="text-white mb-4">People bord on December 11</div>
+        <div class="flex flex-row gap-4  justify-center">
+            <div *ngFor="let item of loadPeopleData">
+                <a [routerLink]="['/details']" [queryParams]="{id : item.Id}">
+                    <div class="text-center text-white">
+                        <img src="{{item.image}}" alt="" width="150px" class=" w-26 h-26 rounded-full object-cover" />
+                        <h1 class=""> {{item.fullname}}</h1>
+                        <h2 class=""> {{calculateAge(item.Born)}}</h2>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+/* ใน styles.css หรือ component CSS */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.bg{
+  background-color: #1a1a1a;
+}
+.custom-button {
+  width: 70px;
+}

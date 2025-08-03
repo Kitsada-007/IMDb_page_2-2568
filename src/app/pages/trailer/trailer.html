@@ -1,0 +1,155 @@
+<div class="mt-20 ml-40 mr-40 mb-30 text-white">
+    <div class="flex items-center gap-1 text-yellow-500">
+        <mat-icon fontIcon="arrow_back_ios"></mat-icon>
+        <a routerLink="" class="text-xl font-semibold hover:underline">black</a>
+    </div>
+
+    <div class="bg">
+        <div class="m-2">
+            <div class="flex flex-row justify-between">
+                <span class="mt-2">
+                    <div class="text-xl">{{movie.title}}</div>
+                    <p class="text-sm text-gray-400">
+                        2025<span class="mx-1">·</span>
+                        PG-13<span class="mx-1">·</span>
+                        2h 9m
+                    </p>
+                </span>
+
+                <div class="flex flex-row gap-2 mt-2">
+                    <div class="flex flex-col items-center space-y-2">
+                        <span class="text-xs font-semibold uppercase text-gray-400">IMDb RATING</span>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-yellow-400 text-sm">
+                                <mat-icon fontIcon="star"></mat-icon>
+                            </span>
+                            <span class="text-sm font-bold">7.5</span>
+                            <span class="text-sm text-gray-400">/10</span>
+                        </div>
+                    </div>
+
+
+                    <div class="flex flex-col items-center space-y-2">
+                        <span class="text-xs font-semibold uppercase text-gray-400">YOUR RATING</span>
+                        <button class="flex items-center space-x-2 text-blue-400 font-bold text-sm hover:text-blue-300">
+                            <span class="text-sm"> <mat-icon fontIcon="star_border"></mat-icon></span>
+                            <span>Rate</span>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col items-center space-y-2">
+                        <span class="text-xs font-semibold uppercase text-gray-400">POPULARITY</span>
+                        <div class="flex items-center space-x-2">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-red-500"> <mat-icon fontIcon="show_chart"></mat-icon></span>
+                                <span class="text-sm font-bold">3</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <mat-icon fontIcon="arrow_downward" class="text-white"></mat-icon>
+                                <span class="text-sm font-bold">2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="flex gap-2 h-84">
+            <div class="w-1/4">
+                <img [src]="movie.poster" class="w-full h-full object-cover rounded shadow" />
+            </div>
+            <div class="w-1/2">
+                <iframe [src]="safeUrl" class="w-full h-full rounded shadow" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="w-1/4 flex flex-col gap-2">
+                <div class="bg2 text-white h-1/2 flex items-center justify-center rounded">
+                    <div class="flex flex-col items-center justify-center">
+                        <mat-icon fontIcon="video_library" class="text-3xl mb-1"></mat-icon>
+                        <div>2 VIDEO</div>
+                    </div>
+                </div>
+                <div class="bg2 text-white h-1/2 flex items-center justify-center rounded">
+                    <div class="flex flex-col items-center justify-center">
+                        <mat-icon fontIcon="filter" class="text-3xl mb-1"></mat-icon>
+                        <div>50 IMAGE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row mb-1 mt-1">
+            <div *ngFor="let item of movie.genres">
+                <button matButton="outlined" class="dense-3 mr-2"> <span
+                        class="text-white text-sm">{{item}}</span></button>
+            </div>
+        </div>
+
+        <div class="flex flex-row-2">
+            <div class="basis-2/3">
+                <div class="text-base mb-1">
+                    {{movie.detail}}
+                </div>
+                <ul class="text-white text-sm">
+                    <li class="py-2">
+                        <strong>Director: </strong>
+                        <a [routerLink]="['/details']" [queryParams]="{id : this.loadJsonPeople[0].Id}" class=" text-blue-400
+                                hover:underline"> {{
+                            this.loadJsonPeople[0].fullname
+                            }} </a>
+                    </li>
+                    <hr class="border-gray-600">
+
+                    <li class="py-2">
+                        <strong>Writers: </strong>
+                        <a [routerLink]="['/details']" [queryParams]="{id : this.loadJsonPeople[1].Id}"
+                            class="text-blue-400 hover:underline">{{ this.loadJsonPeople[1].fullname }}</a>
+                        <span class="mx-1">·</span>
+                        <a [routerLink]="['/details']" [queryParams]="{id : this.loadJsonPeople[2].Id}"
+                            class="text-blue-400 hover:underline">{{ this.loadJsonPeople[2].fullname }}</a>
+                        <span class="mx-1">·</span>
+                        <a [routerLink]="['/details']" [queryParams]="{id : this.loadJsonPeople[3].Id}"
+                            class="text-blue-400 hover:underline">{{ this.loadJsonPeople[3].fullname }}</a>
+                    </li>
+                    <hr class="border-gray-600">
+
+                    <li class="py-2">
+                        <strong>Stars: </strong>
+                        <a [routerLink]="['/details']" [queryParams]="{id : this.loadJsonPeople[4].Id}"
+                            class="text-blue-400 hover:underline">{{ this.loadJsonPeople[4].fullname }}</a>
+                        <span class="mx-1">·</span>
+                        <a [routerLink]="['/details']" [queryParams]="{id : this.loadJsonPeople[5].Id}"
+                            class="text-blue-400 hover:underline">{{ this.loadJsonPeople[5].fullname }}</a>
+                        <span class="mx-1">·</span>
+                        <a [routerLink]="['/details']" [queryParams]="{id : this.loadJsonPeople[1].Id}"
+                            class="text-blue-400 hover:underline">{{ this.loadJsonPeople[1].fullname }}</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="basis-1/3">
+                <div class="grid mt-10 mb-10 ml-5 mr-5">
+
+                    <button
+                        class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-3 rounded-full w-full flex  items-center shadow">
+                        <mat-icon fontIcon="add"></mat-icon>Add
+                        to
+                        Watchlist</button>
+                    <button matButton=""><mat-icon fontIcon="visibility"></mat-icon>Mark as watched</button>
+                    <div class="mt-4 text-sm text-blue-400 space-y-1 text-sm">
+                        <div>
+                            <span class="font-semibold">1.1K</span> User reviews &nbsp;
+                            <span class="font-semibold">219</span> Critic reviews
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="bg-green-600 text-white font-bold px-2 py-0.5 rounded">65</span>
+                            <span class="text-white">Metascore</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "1",
+    "fullname": "Stephen Dorff",
+    "Born": "July 29, 1973",
+    "trailerLink": "https://youtu.be/FGT6ZCgL060?si=E6KZcJcoAfsPA44q",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjA5MzY3NjcyN15BMl5BanBnXkFtZTcwNjEzMzEwNA@@._V1_FMjpg_UX277_.jpg",
+    "detail": "Stephen Dorff was born in Atlanta, Georgia, to Nancy and Steve Dorff, a composer. Chosen from over 2000 young men from around the world, he auditioned and won the coveted role of PK in The Power of One (1992)."
+  },
+  {
+    "Id": "2",
+    "fullname": "Allison Mack",
+    "Born": "July 29, 1982",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTkxOTI4NDIzM15BMl5BanBnXkFtZTcwOTk3Mzc5Mg@@._V1_FMjpg_UX333_.jpg",
+    "trailerLink": "https://youtu.be/BckAQFZOZgg?si=1dFFbdXaQ7zw3TAR",
+    "detail": "Mack was born in Germany but moved with her family to Long Beach, California, when she was 2. She began acting at 4 with print work and commercials, and began studying at The Young Actors Space in Los Angeles when she was 7. Before joining the cast of Smallville (2001), Allison starred in the short-lived and sorely under-rated Fox television comedy Opposite Sex (2000). Prior to that, she was a regular on Hiller and Diller (1997), working alongside great talents such as Richard Lewis, Kevin Nealon, and Eugene Levy. Allison has also guest-starred in the WB family drama 7th Heaven (1996) as a teenager caught up in the cutting trend."
+  },
+  {
+    "Id": "3",
+    "fullname": "Wil Wheaton",
+    "Born": "July 29, 1972",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTg1Mjc5OTc3MF5BMl5BanBnXkFtZTcwODM1MTA4Mg@@._V1_FMjpg_UY2048_.jpg",
+    "trailerLink": "https://youtu.be/M068bv8SGcQ?si=IwUOhGmTaijKDfDw",
+    "detail": "Wil Wheaton was born Richard William Wheaton III on July 29, 1972 in Burbank, California. He first gained international attention by starring in the Rob Reiner comedy-drama film Stand by Me (1986). He then played Wesley Crusher on the television series Star Trek: The Next Generation (1987) for three and one-quarter seasons. Wheaton left the Hollywood scene for 18 months to pursue personal video production. He did return to Star Trek every now and then for an occasional episode, however. He then returned to Los"
+  },
+  {
+    "Id": "4",
+    "fullname": "Sigourney Weaver",
+    "Born": "October 8, 1949",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTk1MTcyNTE3OV5BMl5BanBnXkFtZTcwMTA0MTMyMw@@._V1_FMjpg_UX450_.jpg",
+    "trailerLink": "https://youtu.be/nb_fFj_0rq8?si=nrtEcflk9Jo6dxXU",
+    "detail": "Sigourney Weaver has created a host of memorable characters, both dramatic and comic, ranging from Ripley in Alien to Dian Fossey in Gorillas in the Mist to Gwen/Tawny in Galaxy Quest and most recently, 14-year-old Kiri in Avatar: The Way of Water. With a career spanning over 50 years, Weaver has captivated audiences and won acclaim as one of the most gifted and versatile actresses on stage and screen."
+  },
+  {
+    "Id": "5",
+    "fullname": "Kate Winslet",
+    "Born": "October 5, 1975",
+    "image": "https://m.media-amazon.com/images/M/MV5BODgzMzM2NTE0Ml5BMl5BanBnXkFtZTcwMTcyMTkyOQ@@._V1_FMjpg_UY2048_.jpg",
+    "trailerLink": "https://youtu.be/nb_fFj_0rq8?si=nrtEcflk9Jo6dxXU",
+    "detail": "Ask Kate Winslet what she likes about any of her characters, and the word ballsy is bound to pop up at least once. The British actress has made a point of eschewing straightforward pretty-girl parts in favor of more devilish damsels; as a result, she's built an eclectic resume that runs the gamut from Shakespearean tragedy to modern-day mysticism and erotica."
+  },
+  {
+    "Id": "6",
+    "fullname": "David Corenswet",
+    "Born": "July 8, 1993",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTFmZTY1MDgtMGZlOS00NGFlLWIxOTEtZTk4NTQ2NTM2MGE0XkEyXkFqcGc@._V1_FMjpg_UX399_.jpg",
+    "trailerLink": "https://youtu.be/7VAXVBQ-BZ8?si=wZobI7hGdT-UaqOb",
+    "detail": "Perhaps best known for playing Superman in the DCU, David Packard Corenswet is a native of Philadelphia, Pennsylvania. His parents, Caroline Packard and John Corenswet, were lawyers, and his father also worked as a stage actor in New York for many years. His grandfather, Edward Packard, is an author and the creator of the Choose Your Own Adventure book series. His father was from a Jewish family long-settled in New Orleans, Louisiana, and his mother was from a Quaker household. David"
+  }
+]
